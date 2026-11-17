@@ -1,0 +1,82 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background-color: #eeeeee;
+    margin: 0;
+}
+
+header {
+    background-color: #336699;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.produk {
+    display: flex;
+    gap: 15px;
+    margin: 20px;
+}
+
+.item {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    flex: 1;
+}
+
+.gambar {
+    background-color: lightblue;
+    padding: 25px;
+    font-size: 35px;
+}
+
+#formPesan {
+    background-color: white;
+    width: 400px;
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+input:not([type="radio"]), select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+button {
+    background-color: #336699;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #224466;
+}
+
+footer {
+    background-color: #336699;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+p {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    flex: 1;
+}

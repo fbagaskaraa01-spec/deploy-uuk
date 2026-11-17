@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Sekolah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Toko Perlengkapan Sekolah</h1>
+    </header>
+
+    <section class="produk">
+
+        <article class="item">
+            <img src="product-cv-zalsa-widya-dana-20230527023251779.jpg" alt="buku" width="150">
+            <h3>Buku Tulis</h3>
+            <p>Rp5.000</p>
+        </article>
+
+        <article class="item">
+            <img src="OIP (1).webp" alt="pensil" width="150">
+            <h3>Pensil</h3>
+            <p>Rp3.000</p>
+        </article>
+
+        <article class="item">
+            <img src="OIP (2).webp" alt="tas" width="150">
+            <h3>Tas Sekolah</h3>
+            <p>Rp75.000</p>
+        </article>
+
+    </section>
+
+    <form id="formPesan" action="#" method="get">
+
+        <h2>Form Pemesanan</h2>
+
+        <label for="nama">Nama Pemesan</label>
+        <input type="text" id="nama" name="nama"
+        required minlength="3" maxlength="50">
+
+        <label for="hp">Nomor HP</label>
+        <input type="tel" id="hp" name="hp"
+        required pattern="[0-9]{10,13}"
+        title="Isi 10 sampai 13 angka">
+
+        <label for="produk">Pilih Produk</label>
+        <select id="produk" name="produk" required>
+            <option value="">-- Pilih --</option>
+            <option value="Buku Tulis">Buku Tulis</option>
+            <option value="Pensil">Pensil</option>
+            <option value="Tas Sekolah">Tas Sekolah</option>
+        </select>
+
+        <label for="jumlah">Jumlah</label>
+        <input type="number" id="jumlah" name="jumlah"
+        min="10" max="13" required>
+
+        <p>Metode Pembayaran</p>
+
+        <input type="radio" id="transfer" name="bayar"
+        value="Transfer" required>
+        <label for="transfer">Transfer</label>
+
+        <input type="radio" id="cod" name="bayar"
+        value="COD">
+        <label for="cod">COD</label>
+
+        <br><br>
+
+        <label for="alamat">Alamat</label>
+        <textarea id="alamat" name="alamat"
+        minlength="10" maxlength="200" required></textarea>
+
+        <button type="submit">Pesan</button>
+
+    </form>
+
+    <footer>
+        <p>Kontak: 081234567890</p>
+    </footer>
+
+</body>
+</html>
+
